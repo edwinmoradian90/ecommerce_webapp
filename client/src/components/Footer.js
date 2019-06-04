@@ -26,6 +26,17 @@ const Footer = props => {
             </li>
           </ul>
         </Container>
+        <h5
+          style={{
+            color: "white",
+            display: "flex",
+            justifyContent: "center",
+            fontWeight: "100",
+            fontSize: ".8em"
+          }}
+        >
+          copyright Store 2019
+        </h5>
       </div>
     </div>
   );
