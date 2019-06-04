@@ -8,7 +8,6 @@ function CategoryDisplay(props) {
     props.history.push(`/categories/${category}`);
   };
 
-  console.log(props.imgs);
   return (
     <Container>
       <Card index={props.index} style={{ width: "18rem" }}>

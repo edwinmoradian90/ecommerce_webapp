@@ -5,7 +5,7 @@ function CategoryDisplay(props) {
   return (
     <div>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" height={200} src={props.imgs} />
+        <Card.Img variant="top" src={props.imgs} />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
           <Card.Text>{props.price}</Card.Text>

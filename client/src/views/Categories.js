@@ -43,9 +43,16 @@ class Categories extends Component {
         />
 
         {this.state.isLoaded ? (
-          <Container style={{ display: "flex", flexDirection: "row" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "spaceEvenly"
+            }}
+          >
             {this.state.categoriesAndImgs.map((categoriesAndImgs, index) => (
-              <div key={index}>
+              <div style={{ padding: "40px" }} key={index}>
                 <CategoriesDisplay
                   category={this.state.category}
                   categories={Object.keys(categoriesAndImgs)}
@@ -54,7 +61,7 @@ class Categories extends Component {
                 />
               </div>
             ))}
-          </Container>
+          </div>
         ) : (
           <Container style={{ position: "fixed", top: "50%", left: "50%" }}>
             <Spinner animation="border" />

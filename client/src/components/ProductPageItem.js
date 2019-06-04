@@ -11,67 +11,61 @@ function ProductPageItem(props) {
       {props.isLoaded ? (
         <>
           <PageTitle name={props.name} description={props.description} />
-          <Container>
-            <div
+          <img src={props.img} height={400} alt="colors" />
+          <div
+            style={{
+              display: "flex",
+              float: "right",
+              overflow: "hidden"
+            }}
+          >
+            <span
               style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between"
+                padding: "30px",
+                backgroundColor: "white",
+                color: "grey"
               }}
             >
-              <img src={props.img} height={400} width="60%" alt="colors" />
-
-              <span
+              <h4
                 style={{
-                  marginLeft: "60px",
-                  backgroundColor: "white",
-                  padding: "20px",
-                  color: "grey",
-                  boxShadow: "3px 3px 10px lightslategrey",
-                  borderBottom: "1px solid lightslategrey"
+                  fontWeight: 250
                 }}
               >
-                <h4
-                  style={{
-                    fontWeight: 250
-                  }}
-                >
-                  Description
-                </h4>
-                {props.description}
+                Description
+              </h4>
+              {props.description}
 
-                <div
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "40px"
+                }}
+              >
+                <span
                   style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    marginTop: "40px"
+                    fontWeight: 250,
+                    color: "#333",
+                    fontSize: "2em"
                   }}
                 >
-                  <span
-                    style={{
-                      fontWeight: 250,
-                      color: "#333",
-                      fontSize: "2em"
-                    }}
-                  >
-                    ${props.price}
-                  </span>
-                  <span style={{ display: "flex", flexDirection: "row" }}>
-                    <AddToCart />
-                    {props.categoryPage ? (
-                      <Link to={`/categories/${props.match.params.category}`}>
-                        <Button>Back</Button>
-                      </Link>
-                    ) : (
-                      <Link to="/">
-                        <Button style={{ marginLeft: "20px" }}>Back</Button>
-                      </Link>
-                    )}
-                  </span>
-                </div>
-              </span>
-            </div>
-          </Container>
+                  ${props.price}
+                </span>
+                <span style={{ display: "flex", flexDirection: "row" }}>
+                  <AddToCart />
+                  {props.categoryPage ? (
+                    <Link to={`/categories/${props.match.params.category}`}>
+                      <Button>Back</Button>
+                    </Link>
+                  ) : (
+                    <Link to="/">
+                      <Button style={{ marginLeft: "20px" }}>Back</Button>
+                    </Link>
+                  )}
+                </span>
+              </div>
+            </span>
+          </div>
         </>
       ) : (
         <>

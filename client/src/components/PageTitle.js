@@ -15,13 +15,23 @@ export default class PageTitle extends Component {
           <Container>
             <h1
               style={{
+                display: "flex",
+                justifyContent: "center",
                 fontWeight: 250,
                 fontSize: "3.5em"
               }}
             >
               {this.props.name}
             </h1>
-            <p style={{ color: "#777" }}>{this.props.description}</p>
+            <p
+              style={{
+                color: "#777",
+                display: "flex",
+                justifyContent: "center"
+              }}
+            >
+              {this.props.description}
+            </p>
           </Container>
         </Jumbotron>
       </React.Fragment>

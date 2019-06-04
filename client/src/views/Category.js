@@ -44,21 +44,26 @@ class Category extends Component {
       <div>
         <PageTitle name={category} />
         {this.state.isLoaded ? (
-          <>
-            <Container style={{ display: "flex", flexDirection: "row" }}>
-              {this.state.category.map((category, index) => (
-                <Container key={index}>
-                  <CategoryDisplay
-                    viewProduct={this.viewProduct}
-                    name={category.name}
-                    description={category.description}
-                    imgs={category.img}
-                    price={category.price}
-                  />
-                </Container>
-              ))}
-            </Container>
-          </>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "spaceEvenly"
+            }}
+          >
+            {this.state.category.map((category, index) => (
+              <div style={{ padding: "40px" }} key={index}>
+                <CategoryDisplay
+                  viewProduct={this.viewProduct}
+                  name={category.name}
+                  description={category.description}
+                  imgs={category.img}
+                  price={category.price}
+                />
+              </div>
+            ))}
+          </div>
         ) : (
           <Spinner
             style={{ position: "fixed", top: "50%", left: "50%" }}
