@@ -4,6 +4,7 @@ import PageTitle from "./PageTitle";
 import AddToCart from "./AddToCart";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "./ProductPageItem.css";
 
 function ProductPageItem(props) {
   return (
@@ -11,17 +12,11 @@ function ProductPageItem(props) {
       {props.isLoaded ? (
         <>
           <PageTitle name={props.name} description={props.description} />
-          <img src={props.img} height={400} alt="colors" />
-          <div
-            style={{
-              display: "flex",
-              float: "right",
-              overflow: "hidden"
-            }}
-          >
+          <div id="container">
+            <img src={props.img} height={400} alt="colors" />
             <span
               style={{
-                padding: "30px",
+                padding: "30px 20px 30px 70px",
                 backgroundColor: "white",
                 color: "grey"
               }}
