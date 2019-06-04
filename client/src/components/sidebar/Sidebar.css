@@ -1,0 +1,141 @@
+#sidebar {
+
+    position: fixed;
+    width: 40vw;
+    height: 100vh;
+    transition: transform 1s cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+    color: black;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: .5px .5px 7px black;
+}
+
+#sidebar.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+}
+
+#sidebar.hide {
+    transform: translate3d(-40vw, 0, 0)
+}
+
+.menu-item {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+
+    padding-top: 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin: 0px;
+    cursor: pointer
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    color: lightskyblue;
+}
+
+#header {
+    height: 6vh;
+    width: 40vw;
+    background-color: #333;
+}
+
+#header h3 {
+    margin: 0 auto;
+    color: white;
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+
+#header h4 {
+    padding-top: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:300px) and (max-width:767px) {
+    #sidebar {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        transition: transform 1s cubic-bezier(0, .52, 0, 1);
+        overflow: scroll;
+        z-index: 1000;
+        color: black;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: .5px .5px 7px black;
+
+    }
+
+    #header {
+        height: 10vh;
+        width: 100vw;
+        background-color: #333;
+
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width:300px) and (max-width:1023px) {
+    #sidebar {
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        transition: transform 1s cubic-bezier(0, .52, 0, 1);
+        overflow: scroll;
+        z-index: 1000;
+        color: black;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: .5px .5px 7px black;
+
+    }
+
+    #header {
+        height: 17.8%;
+        width: 50vw;
+        background-color: #333;
+
+    }
+
+}
+
+
+@media screen and (orientation:landscape) and (min-width:1024px) {
+    #sidebar {
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        transition: transform 1s cubic-bezier(0, .52, 0, 1);
+        overflow: scroll;
+        z-index: 1000;
+        color: black;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: .5px .5px 7px black;
+
+    }
+
+    #header {
+        height: 8.7%;
+        width: 50vw;
+        background-color: #333;
+
+    }
+}

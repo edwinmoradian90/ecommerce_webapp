@@ -1,0 +1,16 @@
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #333;
+    color: white;
+}
+
+#row {
+    padding-bottom: 3px;
+}
+
+#col {
+    padding-bottom: 20px
+}

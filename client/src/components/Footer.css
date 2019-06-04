@@ -1,0 +1,23 @@
+.Nav {
+    height: 20vh;
+    width: 100vw;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 5vh;
+
+}
+
+.Container {
+    padding-top: 3.5vh;
+}
+
+.Nav-items {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}

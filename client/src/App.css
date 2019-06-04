@@ -1,0 +1,47 @@
+body {
+    font-weight: 250;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+
+
+
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: lightblue;
+}
+
+
+
+.product-listing {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+
+.product-listing .product-list-item {
+    padding: 30px 30px;
+
+}
+
+@media screen and (min-width:300px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%
+    }
+}

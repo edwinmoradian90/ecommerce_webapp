@@ -1,0 +1,25 @@
+.link {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px
+}
+
+.link :hover {
+    color: lightslategray;
+}
+
+.title {
+    font-weight: 100;
+    text-align: center;
+    font-size: 2em;
+}
+
+.address {
+    display: inline
+}

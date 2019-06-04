@@ -1,0 +1,23 @@
+.hovering {
+    transition: transform 2s linear;
+
+    background-color: black
+}
+
+.not-hovering {
+    background-color: white
+}
+
+
+
+@media screen and (min-width:300px) and (max-width: 767px) {
+    #products {
+        display: none
+    }
+
+    #greetings {
+        display: none;
+    }
+
+
+}

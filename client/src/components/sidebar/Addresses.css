@@ -1,0 +1,10 @@
+#address-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#address-link:hover {
+    color: lightblue;
+    cursor: pointer;
+    text-decoration: underline;
+}

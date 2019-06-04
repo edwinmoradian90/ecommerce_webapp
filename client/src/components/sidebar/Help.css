@@ -1,0 +1,16 @@
+.heading {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 100
+}
+
+.faq {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 100
+}
+
+.faq p:hover {
+    color: lightskyblue;
+    cursor: pointer;
+}
